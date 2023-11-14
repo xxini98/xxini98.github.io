@@ -1,0 +1,261 @@
+<style>
+  /* // .sec1 {
+  //   background: #f4f4f4;
+  //   #home {
+  //     position: relative;
+  //     height: 100vh;
+  //   }
+  //   .home-wrap {
+  //     width: 100%;
+  //     height: 100%;
+  //     .blob {
+  //       position: absolute;
+  //       width: 90%;
+  //       height: 90%;
+  //       top: 50%;
+  //       left: 50%;
+  //       transform: translate(-50%, -50%);
+  //     }
+  //   }
+  //   .text-wrap {
+  //     position: absolute;
+  //     width: 900px;
+  //     height: 100%;
+  //     transform: translate(-50%, -50%);
+  //     top: 50%;
+  //     left: 50%;
+  //     font-family: "Bitter";
+  //     font-style: italic;
+  //     .tw {
+  //       position: absolute;
+  //       font-size: 75px;
+  //       font-weight: 500;
+  //       transform: translate(-50%, -50%);
+  //       color: #25216d;
+  //     }
+
+  //     .text-hello {
+  //       top: 38%;
+  //       left: 18%;
+  //       &::after {
+  //         content: "";
+  //         position: absolute;
+  //         top: 55%;
+  //         left: 183%;
+  //         width: 350px;
+  //         transform: translate(-50%, -50%);
+  //         height: 3px;
+  //         background: #25216d;
+  //       }
+  //     }
+  //     .text-reveal {
+  //       .name-re {
+  //         top: 38%;
+  //         right: -14%;
+  //       }
+  //       .pf-re {
+  //         top: 50%;
+  //         right: -22%;
+  //       }
+  //     }
+  //     .welcome {
+  //       top: 50%;
+  //       left: 27%;
+  //     }
+  //     .text-etc {
+  //       font-style: normal;
+  //     }
+  //     .text-intro {
+  //       top: 65%;
+  //       left: 50%;
+  //       width: 500px;
+  //       text-align: center;
+  //       font-size: 16px;
+  //       font-weight: 700;
+  //     }
+  //     .guide {
+  //       bottom: 4%;
+  //       left: 50%;
+  //       font-size: 14px;
+  //       font-weight: 400;
+  //     }
+  //     .copyright {
+  //       bottom: 1%;
+  //       left: 50%;
+  //       font-size: 14px;
+  //       font-weight: 400;
+  //     }
+  //   }
+
+  //   .scroll-down {
+  //     position: absolute;
+  //     // bottom: 50%;
+  //     // right: 6%;
+  //     bottom: 7%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  //   }
+  //   .scroll-down span:nth-child(2) {
+  //     animation-delay: -0.2s;
+  //   }
+  //   .scroll-down span:nth-child(3) {
+  //     animation-delay: -0.4s;
+  //   }
+  //   .scroll-down span {
+  //     display: block;
+  //     width: 20px;
+  //     height: 20px;
+  //     border-bottom: 1px solid rgb(37, 33, 109, 0.5);
+  //     border-right: 1px solid rgb(37, 33, 109, 0.5);
+  //     transform: rotate(45deg);
+  //     margin: -10px;
+  //     animation: animate 2s infinite;
+  //   }
+  //   @keyframes animate {
+  //     0% {
+  //       opacity: 0;
+  //       transform: rotate(45deg) translate(-20px, -20px);
+  //     }
+  //     50% {
+  //       opacity: 1;
+  //     }
+  //     100% {
+  //       opacity: 0;
+  //       transform: rotate(45deg) translate(20px, 20px);
+  //     }
+  //   }
+  // } */
+
+
+
+  
+  /* bubble inspired by Mattia Astorino https://codepen.io/equinusocio/pen/jezBdZ*/
+
+  /* // .bubble {
+  //   position: relative;
+  // }
+
+  // .bubble::before {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: 2;
+  //   top: 35%;
+  //   left: 35%;
+  //   transform: translate(-50%, -50%);
+  //   display: block;
+  //   width: 25vw;
+  //   height: 25vw;
+  //   min-height: 200px;
+  //   min-width: 200px;
+  //   background: linear-gradient(
+  //     270deg,
+  //     #fdcb6e,
+  //     #38f9d7,
+  //     #e0c3fc,
+  //     #8ec5fc,
+  //     #4facfe,
+  //     #a8edea,
+  //     #fdcb6e
+  //   );
+  //   background-size: 1600% 1600%;
+  //   box-shadow: inset 0px -20px 100px 0px rgba(255, 255, 255, 0.48);
+  //   animation: transform 20s linear infinite alternate,
+  //     movement 40s linear infinite alternate,
+  //     shade 60s linear infinite alternate;
+  // }
+
+  // .bubble::after {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: 2;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   display: block;
+  //   width: 15vw;
+  //   height: 10vw;
+  //   min-height: 200px;
+  //   min-width: 200px;
+  //   background: linear-gradient(
+  //     270deg,
+  //     #00f2fe,
+  //     #8ec5fc,
+  //     #38f9d7,
+  //     #4facfe,
+  //     #a8edea,
+  //     #43e97b,
+  //     #e0c3fc,
+  //     #fed6e3
+  //   );
+  //   background-size: 1600% 1600%;
+  //   box-shadow: inset 0px -20px 100px 0px rgba(255, 255, 255, 0.48);
+  //   animation: transform2 20s linear infinite alternate-reverse,
+  //     movement 40s linear infinite alternate-reverse,
+  //     shade 60s linear infinite alternate-reverse;
+  // }
+
+  // @keyframes transform {
+  //   0%,
+  //   100% {
+  //     border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  //   }
+  //   20% {
+  //     border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  //   }
+  //   40% {
+  //     border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  //   }
+  //   60% {
+  //     border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  //   }
+  //   80% {
+  //     border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  //   }
+  // }
+
+  // @keyframes transform2 {
+  //   0% {
+  //     border-radius: 42% 58% 60% 40% / 32% 54% 46% 68%;
+  //   }
+  //   20% {
+  //     border-radius: 59% 41% 36% 64% / 32% 64% 36% 68%;
+  //   }
+  //   40% {
+  //     border-radius: 48% 52% 52% 48% / 54% 53% 47% 46%;
+  //   }
+  //   60% {
+  //     border-radius: 42% 58% 51% 49% / 63% 64% 36% 37%;
+  //   }
+  //   80% {
+  //     border-radius: 32% 68% 33% 67% / 63% 35% 65% 37%;
+  //   }
+  //   100% {
+  //     border-radius: 34% 66% 52% 48% / 34% 53% 47% 66%;
+  //   }
+  // }
+
+  // @keyframes movement {
+  //   from {
+  //     -webkit-transform: rotate(-1turn) translateY(-50px);
+  //     transform: rotate(-1turn) translateY(-50px);
+  //   }
+  //   to {
+  //     -webkit-transform: none;
+  //     transform: none;
+  //   }
+  // }
+
+  // @keyframes shade {
+  //   0%,
+  //   100% {
+  //     background-position: 0% 50%;
+  //   }
+  //   50% {
+  //     background-position: 100% 50%;
+  //   }
+  // }
+
+ */
+
+
+</style>
